@@ -1,0 +1,10 @@
+.sidenav {
+  height: 75vh;
+  width:20vh;
+  background: linear-gradient(to left, #2f396470 0%, #040b31e5 94%);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}

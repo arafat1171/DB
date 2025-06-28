@@ -1,0 +1,21 @@
+@import "tailwindcss";
+:root {
+  /* optional: define the colors as variables */
+  --color-stop1: #0F123B;
+  --color-stop2: #090D2E;
+  --color-stop3: #020515;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* The gradient background */
+  background: linear-gradient(
+    180deg,
+    var(--color-stop1) 0%,
+    var(--color-stop2) 59%,
+    var(--color-stop3) 100%
+  ) !important;
+  min-height: 100vh;
+}
