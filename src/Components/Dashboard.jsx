@@ -6,6 +6,7 @@ import ReferralCard from "./DashboarddATA/ReferralCard";
 import SalesChart from "./DashboarddATA/SalesChart";
 import WelcomeCard from "./DashboarddATA/WelcomeCard";
 import Header from "./DashboarddATA/Header";
+import AuthorsTable  from "./DashboarddATA/AuthorsTable"
 import { CurrencyDollarIcon, UsersIcon, UserPlusIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import DBBGImage from "../assets/DBBG.png";
 
@@ -79,7 +80,14 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+        <footer className="text-white text-sm text-right space-x-5 mb-8 mr-10">
+          <a href="#" className="hover:underline">Marketplace</a>
+          <a href="#" className="hover:underline">Blog</a>
+          <a href="#" className="hover:underline">License</a>
+        </footer>
+       
       </div>
+      
     </div>
 
     

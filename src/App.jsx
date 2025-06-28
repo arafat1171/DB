@@ -15,29 +15,19 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="App min-h-screen">
-        <Routes>
-        
-          <Route path="/login" element={<Login />} />
-
-         
-          <Route
-            path="/dashboard"
-            element={
-             
+      <div className="App min-h-screen flex flex-col">
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route
+              path="/dashboard"
+              element={
                 <Dashboard />
-             
-            }
-          />
-
-          {/* **THIS IS THE KEY FIX:**
-            This route handles the root path ('/'). It checks if the user is 
-            logged in. If they are, it navigates them to the dashboard.
-            If not, it sends them to the login page.
-          */}
-         
-          
-        </Routes>
+              }
+            />
+          </Routes>
+        </main>
+        
       </div>
     </Router>
   );

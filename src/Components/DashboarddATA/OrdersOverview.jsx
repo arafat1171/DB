@@ -39,7 +39,7 @@ const OrdersOverview = () => {
   ]
 
   return (
-    <div className="bg-[#060B26]/50 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+    <div className="bg-[#060B26]/50 backdrop-blur-sm rounded-xl p-6 border border-white/20 h-full">
       <h3 className="text-white text-lg font-semibold mb-6">Orders overview</h3>
       <p className="text-green-400 text-sm mb-6">+30% this month</p>
 
