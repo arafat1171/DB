@@ -9,6 +9,7 @@ import WelcomeCard from "./DashboarddATA/WelcomeCard";
 import Header from "./DashboarddATA/Header";
 import AuthorsTable from "./DashboarddATA/AuthorsTable";
 import Projects from "./DashboarddATA/projects";
+import BillingPage from "./DashboarddATA/BillingPage";
 import { CurrencyDollarIcon, UsersIcon, UserPlusIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import DBBGImage from "../assets/DBBG.png";
 
@@ -54,7 +55,7 @@ const Dashboard = () => {
             </div>
 
             {/* Second Row */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
               <div>
                 <WelcomeCard />
               </div>
@@ -86,6 +87,12 @@ const Dashboard = () => {
               <AuthorsTable />
               <Projects />
             </div>
+          </div>
+        );
+      case "Billing":
+        return (
+          <div className="p-4 md:p-6 space-y-4 md:space-y-6">
+            <BillingPage />
           </div>
         );
       default:
